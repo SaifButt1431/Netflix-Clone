@@ -1,0 +1,370 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Dancing+Script:wght@400;500;700&family=Lato:wght@100;300&family=Mooli&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;1,200;1,300;1,400&family=Roboto+Condensed:wght@300&family=Roboto+Mono:wght@100&family=Roboto+Slab:wght@500&family=Roboto:wght@100;400&family=Source+Code+Pro:wght@200&family=Ubuntu:wght@300&display=swap'); */
+
+* {
+  /* font-family: 'Source Code Pro', ; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100%;
+  height: 100vh;
+  background-image: url("back.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.overlay {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+#main #nav {
+
+  /* bottom: 50%; */
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  position: absolute;
+  top: 0;
+  height: 100px;
+  width: 200px;
+  margin: 12px 12vh;
+  background: transparent;
+}
+
+#nav button {
+  position: absolute;
+  top: 0.7%;
+  left: 80%;
+  display: flex;
+  align-items: center;
+  background-color: rgb(222, 59, 0);
+  padding: 8px 15px;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+#nav button:hover {
+  background-color: rgba(255, 68, 0, 0.495);
+}
+
+#main header {
+  position: absolute;
+  /* top: 50%; */
+  left: 50%;
+  transform: translate(-50%, -200%);
+  color: #fff;
+  line-height: 1.6;
+  margin: 26px;
+}
+
+header h1 {
+  width: 100%;
+  display: block;
+  font-family: 'Roboto Slab', serif;
+  font-size: 37px;
+  font-weight: 1000;
+}
+
+header h4 {
+  font-size: 26px;
+  text-align: center;
+  font-weight: 600;
+}
+
+header h6 {
+  font-size: 22px;
+  text-align: center;
+  font-weight: 200;
+}
+
+.inputs input {
+  width: 60%;
+  padding: 19px;
+  /* border: none; */
+  outline: none;
+  background: transparent;
+  color: #fff;
+  border: 2px solid #555;
+}
+
+.inputs button {
+  padding: 20px;
+  background-color: rgb(229, 9, 20);
+  color: #fff;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  /* margin-bottom: 40px; */
+}
+
+.inputs button:hover {
+  background-color: rgba(255, 2, 15, 0.738);
+}
+
+hr {
+  color: #6666;
+  border: 4px solid #444;
+}
+
+/* Enjoying TV ------------------------------- */
+#tv {
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.txt {
+  width: 40%;
+  height: 500;
+  line-height: 1.8;
+  margin: 50px;
+}
+
+.txt h1 {
+  font-size: 4em;
+  font-weight: 800;
+}
+
+.txt p {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+/* .img {
+  width: 30%;
+  height: 300;
+  background-color: red;
+} */
+
+/* Main-content--------------------------------------- */
+
+#main-content {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 59px;
+}
+
+#main-content .card {
+  width: 30%;
+  height: 550px;
+  object-fit: cover;
+  object-position: center;
+}
+
+#main-content .card1 {
+  width: 30%;
+  height: 400px;
+  color: #fff;
+}
+
+.card1 h1 {
+  font-size: 3.4em;
+  font-weight: 800;
+}
+
+.card1 p {
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+/* text--------------------------------------- */
+#text {
+  width: 100%;
+  height: 80vh;
+  background-color: #000;
+  color: #fff;
+}
+
+#text .card {
+  padding: 80px 90px;
+}
+
+.card h1 {
+  font-size: 4em;
+}
+
+.card p {
+  line-height: 1.6;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+}
+
+#kid-sect {
+  word-wrap: 100%;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 70px;
+  color: #fff;
+}
+
+#kid-sect .card2 {
+  width: 30%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
+#kid-sect .card3 {
+  margin-top: 90px;
+  width: 30%;
+  height: 400px;
+  line-height: 1.4;
+}
+
+.card3 h1 {
+  font-size: 3em;
+  font-weight: 900;
+}
+
+.card3 p {
+  font-size: 1.4em;
+  font-weight: 400;
+}
+
+/* Netflix Questions------------------------------------- */
+#questions {
+  width: 100%;
+  height: 150vh;
+  background-color: #000;
+  color: #fff;
+}
+
+#questions h1 {
+  text-align: center;
+  padding-top: 40px;
+  font-size: 3em;
+}
+
+.ques {
+  width: 80%;
+  height: 85px;
+  background-color: #333;
+  margin: 13px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ques h1 {
+  font-size: 10px;
+  font-weight: 200;
+  letter-spacing: 3px;
+  padding-bottom: 35px;
+  padding: 20px;
+}
+
+.ques i {
+  padding: 30px;
+  font-size: 35px;
+  /* font-weight: bold; */
+}
+
+#questions h4 {
+  font-size: 20px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.input {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+.input input {
+  width: 35%;
+  padding: 15px;
+  /* border: none; */
+  outline: none;
+  background: transparent;
+  color: #fff;
+  border: 2px solid #555;
+  border-radius: 5px;
+}
+
+.input button {
+  padding: 20px;
+  background-color: rgb(229, 9, 20);
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+.input button:hover {
+  background-color: rgba(255, 2, 15, 0.738);
+}
+
+/* footer-------------------------------------------- */
+footer {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* flex-direction: column; */
+}
+
+footer a {
+  color: #fff;
+}
+
+footer .row1 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 80px;
+}
+
+footer .row2 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 20px;
+}
+
+footer .row3 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 20px;
+}
+
+footer .row4 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 20px;
+  margin-bottom: 70px;
+}
